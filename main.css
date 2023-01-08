@@ -3,11 +3,15 @@ input{
     height: 25px;
 }
 
-form {
+.centered {
+    padding-top: 15px;
+}
+
+#checkboxGrid {
     width: 60px;
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   }
 
 .generated {
@@ -18,10 +22,11 @@ form {
 .left {
 
     float: left;
-    width: 250px;
+    width: auto;
     height: 100%;
     padding: 10px;
     padding-left: 15%;
+    padding-right: 5%;
     vertical-align: middle;
 }
 
@@ -55,11 +60,15 @@ div.t {
     width: 100%;
     padding-right: 5px;
 }
-p.player, p.ascii {
+p.player, p.ascii, p.boardSize {
     text-align: left;
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
+p.boardSize{
+    padding-top: 10px;
+}
+
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -89,6 +98,10 @@ h2 {
     appearance: none;
     border-radius: 4px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#newBoardSize{
+    margin-top: 10px;
 }
 
 :focus{
