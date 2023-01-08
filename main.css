@@ -60,6 +60,11 @@ h2 {
     padding-top: 20px;
 }
 
+.redBox, .blueBox {
+    box-shadow: 0pt 0pt 0pt 1.3pt #e36767b0;
+}
+
+
 #player1, #player2, #board{
     padding: 6px 12px;
     font-size: 16px;

@@ -32,6 +32,9 @@ function generate(){
         }
     });
     //document.write("You have checked: ", checked, "\n" ,  "You have undertimate: ", undeterminate);
+    checked.sort(function(a, b){return a - b});
+    undeterminate.sort(function(a, b){return a - b});
+
     console.log("Checked boxes: ");
     console.log(checked);
     console.log("Indertemined boxes: ");
@@ -64,7 +67,7 @@ function generate(){
 
     x=0
     var board = checked.concat(undeterminate);
-    board.sort();
+    board.sort(function(a, b){return a - b});
     console.log("This is the board: ", board);
     for(let i = 0 ; i<64 ; i++){
         if(board[x] == i){
