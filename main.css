@@ -21,19 +21,31 @@ form {
     width: 250px;
     height: 100%;
     padding: 10px;
-    padding-left: 25%;
+    padding-left: 15%;
     vertical-align: middle;
 }
 
 .right {
     float: left;
     padding: 70px;
-    padding-top: 5%;
-    width: 400px;
+    padding-top: 10px;
+    padding-right: 50px;
+    width: auto;
+}
+
+.asciiDiv{
+    float: left;
+    padding: 70px;
+    padding-top: 10px;
+    width: auto;
 }
 
 .inputBox{
     width: 200px;
+}
+.inputBoxAscii{
+    width: 300px;
+    height: 300px;
 }
 
 div.text { display: table; margin: 4px; padding: 1px; }
@@ -43,7 +55,7 @@ div.t {
     width: 100%;
     padding-right: 5px;
 }
-p.player {
+p.player, p.ascii {
     text-align: left;
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -53,7 +65,7 @@ h2 {
     text-align: center;
 }
 
-#generate {
+#generate, #generateAscii {
     margin-right: 10px;
 }
 .buttons {
