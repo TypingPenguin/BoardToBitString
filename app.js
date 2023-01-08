@@ -124,6 +124,7 @@ function setHeight(){
 function setSize(){
     setWidth();
     setHeight();
+    clearBoxes();
 }
 
 function setWidth(){
