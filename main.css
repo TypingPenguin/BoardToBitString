@@ -11,7 +11,6 @@ input{
     width: 60px;
     display: grid;
     grid-gap: 2px;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   }
 
 .generated {
@@ -57,7 +56,6 @@ div.text { display: table; margin: 4px; padding: 1px; }
 
 div.t {
     display: table-cell;
-    width: 100%;
     padding-right: 5px;
 }
 p.player, p.ascii, p.boardSize {
